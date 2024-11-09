@@ -1,9 +1,0 @@
-{
-    "name": "tgi/app",
-    "autoload": {
-        "psr-4": {
-            "Tgi\\App\\": "src/"
-        }
-    },
-    "require": {}
-}
