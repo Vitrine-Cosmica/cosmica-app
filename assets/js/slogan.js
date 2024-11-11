@@ -1,18 +1,20 @@
 function Slogan() {
-    const slogan = document.createElement('header');
-    slogan.className = 'slogan'; // Adiciona uma classe para estilização
+    const slogan = document.createElement('section');
+    slogan.className = 'slogan'; 
     slogan.innerHTML = `
-        <nav>
+        <div>
             <div>
                 <img src="assets/img/LogoCompleto.png" width="400" />
             </div>
             <p>
                 Quando você muda, o mundo muda!
             </p>
-        </nav>
+        </div>
     `;
-    return slogan;
+    const sloganSection = document.getElementById('slogan');
+    sloganSection.appendChild(slogan);
 }
 
-// Adicionando o componente diretamente ao app
-document.getElementById('app').appendChild(Slogan());
+document.addEventListener('DOMContentLoaded', function() {
+    Slogan();
+});

@@ -1,26 +1,18 @@
-/* Estilos da Navbar */
-.navbar {
-    padding: 15px;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
     background-color: #E3E6DD;
-
 }
 
-.navbar nav {
+.section {
+    height:40vh; /* Cada seção ocupa 100% da altura da janela */
     display: flex;
-    gap: 25px;
-    margin-top: 10px;
-}
-
-.navbar a {
-    color: #373937;
-    text-decoration: none;
-    font-family: Radio Canada;
-    font-weight: lighter;
-    font-size: larger;
-}
-
-.logo {
-    padding-right: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start; /* Para que cada seção se alinhe na parte superior */
 }
 
 .slogan {
@@ -29,7 +21,157 @@
     text-align: center;
 }
 
-.full {
+/* Estilos da Navbar */
+.navbar {
+    display: flex;
+    padding: 15px;
     background-color: #E3E6DD;
-    font-family: roca;
 }
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    max-width: 1500px; /* Ajuste de largura total */
+    flex-wrap: nowrap;
+}
+
+.navbar a {
+    color: #373937;
+    text-decoration: none;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.logo {
+    padding-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 17px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    /* Diminui ainda mais o espaço entre links */
+    .navbar nav {
+        gap: 8px;
+    }
+}
+
+/*Fim da navbar*/
+
+/*Categorias*/
+.categorias {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.itens {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    max-width: 1500px;
+    flex-wrap: nowrap; 
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    margin: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: width 0.3s;
+}
+
+/* Estilos para o texto sobreposto */
+.txt-categoria {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #E3E6DD;
+    background-color: #E3E6DD;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Radio Canada', sans-serif;
+    transition: color 0.3s, background-color 0.3s, font-size 0.3s;
+}
+
+/* Estilo para hover na imagem */
+.item:hover .txt-categoria {
+    color: #373937;
+    background-color: #E3E6DD;;
+    font-family: 'Radio Canada', sans-serif;
+    
+}
+
+@media (max-width: 1200px) {
+    .item {
+        width: 280px;
+    }
+
+    .item img {
+        max-width: 280px;
+    }
+
+    .txt-categoria {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: 200px;
+    }
+
+    .item img {
+        max-width: 200px;
+    }
+
+    .txt-categoria {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 150px;
+    }
+
+    .item img {
+        max-width: 150px;
+    }
+
+    .txt-categoria {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+}
+/*Fim das categorias*/
