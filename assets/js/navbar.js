@@ -4,12 +4,15 @@ function Navbar() {
     navbar.innerHTML = `
         <nav>
             <div class="logo">
-                <img src="assets/img/CosmicaLogo.png" width="75" height="31" />
+                <img src="assets/img/LogoCosmicaNav.svg" width="70" height="auto" />
             </div>
-            <a href="/index.html">Home</a>|
-            <a href="#sobre">Cósmica</a>|
-            <a href="#contato">Histórias</a>|
+            
+            <div class="secoes">
+            <a href="/index.html">Home</a>
+            <a href="#sobre">Cósmica</a>
+            <a href="#contato">Histórias</a>
             <a href="#contato">Catálogo</a>
+            </div>
         </nav>
     `;
     return navbar;
