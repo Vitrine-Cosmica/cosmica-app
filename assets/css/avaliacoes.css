@@ -1,0 +1,22 @@
+.crsImg{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.setaesquerda{
+    float: left;
+
+
+}
+
+.setadireita{
+    float: right;
+
+}
+
+.avaliacoes .img-thumbnail{
+    width: 500px;
+}
