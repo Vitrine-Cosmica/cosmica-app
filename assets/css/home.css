@@ -2,7 +2,17 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-family: 'Roca Two', sans-serif;
+    color: #373937;
+    font-size: 30px;
 }
+
+.slogan p {
+    margin-top: 20px;
+}
+
 /* categotias */
 .categorias {
     display: flex;

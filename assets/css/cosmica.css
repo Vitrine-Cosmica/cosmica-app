@@ -1,0 +1,54 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.titulo-cosmica { 
+    font-family: 'Roca Two', sans-serif; 
+    color: #61806B; 
+    margin-left: 5%;
+    margin-top: 5rem;
+    font-size: 48px;
+}
+
+.subtitulo-cosmica {
+    font-family: 'Roca Two', sans-serif; 
+    color: #373937;
+    margin-left: 5%;
+    font-size: 27px;
+
+}
+
+.texto-upcycle {
+    margin-left: 5%;
+    font-size: 24px;
+    margin-right: 30%;
+    margin-top: 2%;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: lighter;
+}
+
+
+.union {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        transform: translateY(-50%);
+        z-index: 0;
+
+}
+
+.titulo-galeria { 
+    text-align: right;
+    font-family: 'Roca Two', sans-serif; 
+    color: #373937; 
+    margin-right: 15%;
+    margin-top: 5rem;
+    font-size: 48px;
+}
+
+
+

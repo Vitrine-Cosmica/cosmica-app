@@ -1,18 +1,30 @@
+// Função para alternar entre as paginas
+function show(shown, hidden) {
+    document.getElementById(shown).style.display = 'block';
+    document.getElementById(hidden).style.display = 'none';
+    return false;
+}
+
+// Navbar
 function Navbar() {
     const navbar = document.createElement('header');
     navbar.className = 'navbar';
     navbar.innerHTML = `
         <nav>
             <div class="logo">
-                <img src="assets/img/CosmicaLogo.png" width="75" height="31" />
+                <img src="assets/img/LogoCosmicaNav.svg" width="80" height="auto" />
             </div>
-            <a href="/index.html">Home</a>|
-            <a href="#sobre">Cósmica</a>|
-            <a href="#contato">Histórias</a>|
-            <a href="#contato">Catálogo</a>
+
+            <div class="secoes">
+            <a href="#" onclick="return show('PageHome', 'PageCosmica');">Home</a> 
+            <a href="#" onclick="return show('PageCosmica', 'PageHome');">Cósmica</a> 
+            <a href="#historias">Histórias</a> 
+            <a href="#catalogo">Catálogo</a>
+            </div>
         </nav>
     `;
     return navbar;
 }
 
-document.getElementById('app').appendChild(Navbar());
+
+document.getElementById('navbar').appendChild(Navbar());
