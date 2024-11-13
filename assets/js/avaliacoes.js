@@ -1,9 +1,13 @@
 function Avaliacoes() {
-    let imgAtual = 0;
     const imgs = [
-        "/assets/img/avaliacoes/av1.png", 
-        "/assets/img/avaliacoes/av2.png", 
-        "/assets/img/avaliacoes/av3.png"
+        ["/assets/img/avaliacoes/av1.png", "/assets/img/avaliacoes/av2.png", "/assets/img/avaliacoes/av3.png"],
+        ["/assets/img/avaliacoes/av4.JPEG", "/assets/img/avaliacoes/av5.JPG", "/assets/img/avaliacoes/av6.JPG"]
+    ];
+
+    const opc = [
+        "imgopc1", 
+        "imgopc2", 
+        "imgopc3"
     ];
 
     const avaliacoes = document.createElement('section');
@@ -15,9 +19,9 @@ function Avaliacoes() {
                 <img src="/assets/img/avaliacoes/back.png" id="btn-anterior" width="30"/>
             </div>
 
-            <img src="${imgs[0]}" class="img-thumbnail" id="imgopc1" />
-            <img src="${imgs[1]}" class="img-thumbnail" id="imgopc2" />
-            <img src="${imgs[2]}" class="img-thumbnail" id="imgopc3" />
+            <img src="/assets/img/avaliacoes/av1.png" class="img-avaliacao" id="imgopc1" />
+            <img src="/assets/img/avaliacoes/av2.png" class="img-avaliacao" id="imgopc2" />
+            <img src="/assets/img/avaliacoes/av3.png" class="img-avaliacao" id="imgopc3" />
 
             <div class="setadireita">
                 <img src="/assets/img/avaliacoes/next.png" id="btn-proxima" width="30"/>
@@ -26,19 +30,25 @@ function Avaliacoes() {
         </div>
     `;
 
-    function imganterior() {
-        imgAtual = (imgAtual <= 0) ? imgs.length - 1 : imgAtual - 1;
-        document.getElementById("imgopc1").src = imgs[imgAtual];
-        document.getElementById("imgopc2").src = imgs[imgAtual];
-        document.getElementById("imgopc3").src = imgs[imgAtual];
+    let conjuntoAtual = 0;
+
+    function exibirConjunto() {
+        const conjunto = imgs[conjuntoAtual];
+        for (let i = 0; i < opc.length; i++) {
+            document.getElementById(opc[i]).src = conjunto[i];
+        }
     }
 
     function proximg() {
-        imgAtual = (imgAtual >= imgs.length - 1) ? 0 : imgAtual + 1;
-        document.getElementById("imgopc1").src = imgs[imgAtual];
-        document.getElementById("imgopc2").src = imgs[imgAtual];
-        document.getElementById("imgopc3").src = imgs[imgAtual];
+        conjuntoAtual = (conjuntoAtual + 1) % imgs.length;
+        exibirConjunto();
     }
+
+    function imganterior() {
+        conjuntoAtual = (conjuntoAtual - 1 + imgs.length) % imgs.length;
+        exibirConjunto();
+    }
+
 
     avaliacoes.querySelector('#btn-anterior').addEventListener('click', imganterior);
     avaliacoes.querySelector('#btn-proxima').addEventListener('click', proximg);
