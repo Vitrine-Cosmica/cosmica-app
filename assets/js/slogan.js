@@ -3,10 +3,10 @@ function Slogan() {
     slogan.className = 'slogan'; 
     slogan.innerHTML = `
         <div>
-            <div>
-                <img src="assets/img/Slogan.svg" width="450" />
+            <div >
+                <img src="assets/img/Slogan.svg" class="logo-completo" />
             </div>
-            <p class="mundo">
+            <h1>
                 Quando você muda, o mundo muda!
             </p>
         </div>
