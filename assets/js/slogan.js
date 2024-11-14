@@ -4,9 +4,9 @@ function Slogan() {
     slogan.innerHTML = `
         <div>
             <div>
-                <img src="assets/img/LogoCompleto.png" width="400" />
+                <img src="assets/img/Slogan.svg" width="450" />
             </div>
-            <p>
+            <p class="mundo">
                 Quando você muda, o mundo muda!
             </p>
         </div>
