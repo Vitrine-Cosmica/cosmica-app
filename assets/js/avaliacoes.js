@@ -13,6 +13,8 @@ function Avaliacoes() {
     const avaliacoes = document.createElement('section');
     avaliacoes.className = 'avaliacoes';
     avaliacoes.innerHTML = `
+        <h1>Nossas Avaliações</h1>
+
         <div class="crsImg">
 
             <div class="setaesquerda">
