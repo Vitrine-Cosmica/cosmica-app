@@ -21,6 +21,11 @@ html, body {
 
 .p1 {
     background-image: url('/assets/img/Background.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-position-y: center;
+    
 }
 
 /* navbar */
