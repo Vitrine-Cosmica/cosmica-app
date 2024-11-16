@@ -15,6 +15,46 @@
     width: 400px;
 }
 
+@media (max-width: 1200px) {
+
+    .slogan .logo-completo {
+        padding-bottom: 4%;
+        max-width: 70%;
+    }
+
+    .slogan h1{
+        font-size: 3.8vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        margin-top: 5%;
+    }
+
+    .slogan .logo-completo {
+        padding-bottom: 4%;
+        max-width: 60%;
+    }
+    
+    .slogan h1{
+        font-size: 3.4vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan .logo-completo {
+        padding-bottom: 4%;
+        max-width: 40%;
+    }
+
+    .slogan h1{
+        font-size: 3vh;
+    }
+
+}
+
 /* categorias */
 .categorias {
     display: flex;
@@ -46,7 +86,7 @@
     width: 100%;
     max-width: 360px;
     height: auto;
-    border-radius: 30px;
+    border-radius: 20%;
     object-fit: cover;
     transition: width 0.3s;
 }
@@ -73,11 +113,17 @@
 }
 
 @media (max-width: 1200px) {
+    .itens{
+        gap: 0px;
+    }
+
     .item {
         width: 280px;
+        
     }
 
     .item img {
+    
         max-width: 280px;
     }
 
@@ -93,7 +139,8 @@
     }
 
     .item img {
-        max-width: 200px;
+        min-width: 90px;
+        min-height: 150px;
     }
 
     .txt-categoria {
@@ -105,10 +152,12 @@
 @media (max-width: 480px) {
     .item {
         width: 150px;
+        height: 100px;
     }
 
     .item img {
         max-width: 150px;
+        height: 100px;
     }
 
     .txt-categoria {
@@ -155,6 +204,30 @@
     border-radius: 30px;
 }
 
+@media (max-width: 1200px) {
+    .img-avaliacao{
+        max-width: 40%;
+    }
+
+    .avaliacoes h1 {
+        font-size: 6vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-avaliacao{
+        max-width: 25%;
+        max-height: 140px;
+    }
+    .avaliacoes h1 {
+        font-size: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
 /*sobre*/
 .sobre {
     padding-top: 10%;
@@ -194,4 +267,23 @@
     font-weight: 500;
     font-size: 5vh;
     color: #373937;
+}
+
+@media (max-width: 1200px) {
+    .texto-sobre {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-sobre {
+        font-size: 1.8vh;
+        color: aqua;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-sobre {
+        font-size: 2.6vh;
+    }
 }
