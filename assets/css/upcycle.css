@@ -1,0 +1,33 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo-upcycle h1 { 
+    font-family: 'Roca Two', sans-serif; 
+    color: #E3E6DD; 
+    margin-left: 5%;
+    margin-top: 5rem;
+    font-size: 48px;
+    background-color: #373937;
+    border-radius: 10%;
+    align-self: center;
+}
+
+.texto-upcycle {
+    margin-left: 50%;
+    font-size: 24px;
+    margin-right: 30%;
+    margin-top: 2%;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: lighter;
+    background-image: url('/assets/img/upcycle/tela.png');
+}
+
+.imgupcycle img {
+    width: 20%;
+    height: 200px;
+    object-fit: cover;
+}

@@ -1,7 +1,8 @@
-// Função para alternar entre as paginas
-function show(pageToShow, pageToHide) {
-    document.getElementById(pageToShow).style.display = 'block';
-    document.getElementById(pageToHide).style.display = 'none';
+// Função para alternar entre as páginas
+function show(shown, hidden1, hidden2) {
+    document.getElementById(shown).style.display = 'block';
+    document.getElementById(hidden1).style.display = 'none';
+    document.getElementById(hidden2).style.display = 'none';
     return false;
 }
 
@@ -15,18 +16,11 @@ function Navbar() {
             <div class="logo">
                 <img src="assets/img/LogoCosmicaNav.svg" width="80" height="auto" />
             </div>
-
-           <div class="container">
-                <div class="navbar">
-                    <nav>
-                        <div class="secoes">
-                        <a href="#" onclick="return show('PageHome', 'PageCosmica', 'Catalogo');">Home</a> 
-                        <a href="#" onclick="return show('PageCosmica', 'PageHome', );">Cósmica</a> 
-                        <a href="#">Histórias</a> 
-                        <a href="#" onclick="return show('Catalogo', ');">Catálogo</a>
-                        </div>
-                    </nav>
-                </div>
+            <div class="secoes">
+                <a href="#" onclick="return show('PageHome', 'PageCosmica', 'PageUpcycle');">Home</a> 
+                <a href="#" onclick="return show('PageCosmica', 'PageHome', 'PageUpcycle');">Cósmica</a> 
+                <a href="#" onclick="return show('PageUpcycle', 'PageHome', 'PageCosmica');">Upcycle Afetivo</a>
+                <a href="#catalogo">Catálogo</a>
             </div>
 
         </nav>
@@ -34,5 +28,7 @@ function Navbar() {
     return navbar;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('navbar').appendChild(Navbar());
+});
 
-document.getElementById('navbar').appendChild(Navbar());
