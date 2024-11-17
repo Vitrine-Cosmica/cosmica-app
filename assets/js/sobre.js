@@ -16,7 +16,7 @@ function Sobre() {
                 </p>
             </div>
             <img src="/assets/img/sobre/sobre.png" class="img-sobre"/>
-        
+            <img src="/assets/img/sobre/sobrePequeno.png" class="img-sobrepequeno"/>
         </div>
     `;
 
