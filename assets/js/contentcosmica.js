@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const pageCosmica = document.getElementById('PageCosmica');
     
-
+if (pageCosmica) {
     pageCosmica.innerHTML = `
 
 <div class="allcontentcosmica">
@@ -105,12 +105,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             </div>
         </section>
-         
-
-
-  
     `;
 
-
+}
 
 });
