@@ -25,83 +25,83 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <section class="galeriaimg">
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img1.png">
+                <img src="assets/img/galeria/img1.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img6.png">
+                <img src="assets/img/galeria/img6.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img8.png">
+                <img src="assets/img/galeria/img8.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img7.png">
+                <img src="assets/img/galeria/img7.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img2.png">
+                <img src="assets/img/galeria/img2.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img3.png">
+                <img src="assets/img/galeria/img3.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img4.png">
+                <img src="assets/img/galeria/img4.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img5.png">
+                <img src="assets/img/galeria/img5.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img9.png">
+                <img src="assets/img/galeria/img9.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img10.png">
+                <img src="assets/img/galeria/img10.jpg">
 
             </div>
              <div class="itemgaleria">
-                <img src="assets/img/galeria/img11.png">
+                <img src="assets/img/galeria/img11.jpg">
 
             </div>
              <div class="itemgaleria">
-                <img src="assets/img/galeria/img12.png">
+                <img src="assets/img/galeria/img12.jpg">
 
             </div>
              <div class="itemgaleria">
-                <img src="assets/img/galeria/img13.png">
+                <img src="assets/img/galeria/img13.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img14.png">
+                <img src="assets/img/galeria/img14.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img15.png">
+                <img src="assets/img/galeria/img15.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img16.png">
+                <img src="assets/img/galeria/img16.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img17.png">
+                <img src="assets/img/galeria/img17.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img18.png">
+                <img src="assets/img/galeria/img18.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img19.png">
+                <img src="assets/img/galeria/img19.jpg">
 
             </div>
             <div class="itemgaleria">
-                <img src="assets/img/galeria/img20.png">
+                <img src="assets/img/galeria/img20.jpg">
 
             </div>
         </section>

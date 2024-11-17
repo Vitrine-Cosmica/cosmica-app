@@ -1,9 +1,10 @@
 // Função para alternar entre as paginas
-function show(shown, hidden) {
-    document.getElementById(shown).style.display = 'block';
-    document.getElementById(hidden).style.display = 'none';
+function show(pageToShow, pageToHide) {
+    document.getElementById(pageToShow).style.display = 'block';
+    document.getElementById(pageToHide).style.display = 'none';
     return false;
 }
+
 
 // Navbar
 function Navbar() {
@@ -15,12 +16,19 @@ function Navbar() {
                 <img src="assets/img/LogoCosmicaNav.svg" width="80" height="auto" />
             </div>
 
-            <div class="secoes">
-            <a href="#" onclick="return show('PageHome', 'PageCosmica');">Home</a> 
-            <a href="#" onclick="return show('PageCosmica', 'PageHome');">Cósmica</a> 
-            <a href="#historias">Histórias</a> 
-            <a href="#catalogo">Catálogo</a>
+           <div class="container">
+                <div class="navbar">
+                    <nav>
+                        <div class="secoes">
+                        <a href="#" onclick="return show('PageHome', 'PageCosmica', 'Catalogo');">Home</a> 
+                        <a href="#" onclick="return show('PageCosmica', 'PageHome', );">Cósmica</a> 
+                        <a href="#">Histórias</a> 
+                        <a href="#" onclick="return show('Catalogo', ');">Catálogo</a>
+                        </div>
+                    </nav>
+                </div>
             </div>
+
         </nav>
     `;
     return navbar;
