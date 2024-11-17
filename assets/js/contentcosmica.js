@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     pageCosmica.innerHTML = `
     <img src="assets/img/grup.svg" alt="" class="union">
         <h1 class="titulo-cosmica">Cósmica upcycle</h1>
-        <h2 class="subtitulo-cosmica">Quem faz e como faz?</h2>
+        <h2 class="subtitulo-cosmica">Resgatando o Valor do Descartável</h2>
         <p class="texto-upcycle">
             Em 2020, a Cósmica começou. <br>
             Sem muitos planos sobre o que se tornaria, nasceu como um pequeno empreendimento de uma carioca que, há pouco tempo, havia se aventurado a viver em terras do sul. <br>
