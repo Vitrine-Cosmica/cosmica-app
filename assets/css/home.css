@@ -2,18 +2,60 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    font-family: 'Roca Two', sans-serif;
+}
+
+.slogan h1{
+    font-family: 'Roca Two';
+    font-size: 4vh;
     color: #373937;
-    font-size: 30px;
 }
 
-.slogan p {
-    margin-top: 20px;
+.slogan .logo-completo {
+    padding-bottom: 4%;
+    width: 400px;
 }
 
-/* categotias */
+@media (max-width: 1200px) {
+
+    .slogan .logo-completo {
+        padding-bottom: 4%;
+        max-width: 70%;
+    }
+
+    .slogan h1{
+        font-size: 3.8vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        margin-top: 5%;
+    }
+
+    .slogan .logo-completo {
+        padding-bottom: 4%;
+        max-width: 60%;
+    }
+    
+    .slogan h1{
+        font-size: 3.4vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan .logo-completo {
+        padding-bottom: 4%;
+        max-width: 40%;
+    }
+
+    .slogan h1{
+        font-size: 3vh;
+    }
+
+}
+
+/* categorias */
 .categorias {
     display: flex;
     justify-content: center;
@@ -44,7 +86,7 @@
     width: 100%;
     max-width: 360px;
     height: auto;
-    border-radius: 30px;
+    border-radius: 20%;
     object-fit: cover;
     transition: width 0.3s;
 }
@@ -68,15 +110,20 @@
     color: #373937;
     background-color: #E3E6DD;;
     font-family: 'Radio Canada', sans-serif;
-    
 }
 
 @media (max-width: 1200px) {
+    .itens{
+        gap: 0px;
+    }
+
     .item {
         width: 280px;
+        
     }
 
     .item img {
+    
         max-width: 280px;
     }
 
@@ -92,7 +139,8 @@
     }
 
     .item img {
-        max-width: 200px;
+        min-width: 90px;
+        min-height: 150px;
     }
 
     .txt-categoria {
@@ -104,10 +152,12 @@
 @media (max-width: 480px) {
     .item {
         width: 150px;
+        height: 100px;
     }
 
     .item img {
         max-width: 150px;
+        height: 100px;
     }
 
     .txt-categoria {
@@ -117,27 +167,172 @@
 }
 
 /* avaliações */
+.avaliacoes h1 {
+    color: #373937;
+    font-size: 6.5vh;
+    font-family: 'Roca Two';
+    padding-left: 7%;
+}
+
+.avaliacoes {
+    padding: 3% ;
+    padding-top: 13%;
+}
+
 .crsImg{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .setaesquerda{
     float: left;
-
-
+    margin-top: 12%;
 }
 
 .setadireita{
     float: right;
-
+    margin-top: 12%;
 }
 
 .avaliacoes .img-avaliacao{
-    width: 500px;
-    height: 460px;
-    border-radius: 30px;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+@media (max-width: 1200px) {
+    .img-avaliacao{
+        max-width: 40%;
+    }
+
+    .avaliacoes h1 {
+        font-size: 6vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-avaliacao{
+        max-width: 25%;
+        max-height: 140px;
+    }
+    .avaliacoes h1 {
+        font-size: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+/*sobre*/
+.sobre {
+    padding-top: 10%;
+}
+
+.sobre-content {
+    display: flex;
+    padding: 20px;
+}
+
+.sobre .textos-sobre {
+    width: 50%;
+    padding-left: 7%;
+}
+
+.sobre .texto-sobre {
+    padding-top: 2%;
+    font-size: 3.4vh;
+    color: #373937;
+}
+
+.sobre .img-sobre {
+    width: 50%;
+    padding-right: 7%;
+    padding-left: 4%;
+    object-fit: contain;
+}
+
+.sobre .img-sobrepequeno {
+    display: none;
+}
+
+.sobre h1 {
+    color: #61806B;
+    font-size: 10vh;
+    font-family: 'Roca Two';
+}
+
+.sobre h3 {
+    font-family: 'Radio Canada';
+    font-weight: 500;
+    font-size: 5vh;
+    color: #373937;
+}
+
+@media (max-width: 1200px) {
+    
+    .sobre h1 {
+        font-size: 8vh;
+    }
+
+    .sobre h3 {
+        font-weight: 500;
+        font-size: 3.6vh;
+    }
+
+    .sobre .texto-sobre {
+        font-size: 2.6vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sobre h1 {
+        font-size: 6vh;
+    }
+
+    .sobre h3 {
+        font-weight: 500;
+        font-size: 2.5vh;
+    }
+
+    .sobre .texto-sobre {
+        font-size: 2vh;
+        width: 110%;
+    }    
+
+    .sobre .img-sobre {
+        display: none;
+    }
+
+    .sobre .img-sobrepequeno {
+        margin-top: -6%;
+        display: flex;
+        width: 50%;
+        padding-right: 7%;
+        padding-left: 4%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sobre h1 {
+        font-size: 8vh;
+    }
+
+    .sobre h3 {
+        font-weight: 500;
+        font-size: 4vh;
+    }
+
+    .sobre .texto-sobre {
+        font-size: 3vh;
+    }
 }
