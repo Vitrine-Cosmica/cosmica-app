@@ -21,6 +21,11 @@ html, body {
 
 .p1 {
     background-image: url('/assets/img/Background.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-position-y: center;
+    
 }
 
 /* navbar */
@@ -74,6 +79,25 @@ html, body {
 
 .secoes {
     margin-left: 0%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 26px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .navbar nav {
+        gap: 8px;
+    }
 }
 
 @media (max-width: 480px) {

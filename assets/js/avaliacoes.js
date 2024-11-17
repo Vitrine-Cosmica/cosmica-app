@@ -1,7 +1,7 @@
 function Avaliacoes() {
     const imgs = [
         ["/assets/img/avaliacoes/av1.png", "/assets/img/avaliacoes/av2.png", "/assets/img/avaliacoes/av3.png"],
-        ["/assets/img/avaliacoes/av4.JPEG", "/assets/img/avaliacoes/av5.JPG", "/assets/img/avaliacoes/av6.JPG"]
+        ["/assets/img/avaliacoes/av4.png", "/assets/img/avaliacoes/av5.png", "/assets/img/avaliacoes/av6.JPG"]
     ];
 
     const opc = [
