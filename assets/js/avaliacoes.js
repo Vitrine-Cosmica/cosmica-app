@@ -1,20 +1,24 @@
 function Avaliacoes() {
     const imgs3 = [
         ["/assets/img/avaliacoes/av1.png", "/assets/img/avaliacoes/av2.png", "/assets/img/avaliacoes/av3.png"],
-        ["/assets/img/avaliacoes/av4.png", "/assets/img/avaliacoes/av5.png", "/assets/img/avaliacoes/av6.JPG"]
+        ["/assets/img/avaliacoes/av2.png", "/assets/img/avaliacoes/av3.png", "/assets/img/avaliacoes/av4.png"],
+        ["/assets/img/avaliacoes/av3.png", "/assets/img/avaliacoes/av4.png", "/assets/img/avaliacoes/av5.png"],
+        ["/assets/img/avaliacoes/av4.png", "/assets/img/avaliacoes/av5.png", "/assets/img/avaliacoes/av1.png"],
+        ["/assets/img/avaliacoes/av5.png", "/assets/img/avaliacoes/av1.png", "/assets/img/avaliacoes/av2.png"],
     ];
     const imgs2 = [
         ["/assets/img/avaliacoes/av1.png", "/assets/img/avaliacoes/av2.png"],
+        ["/assets/img/avaliacoes/av2.png", "/assets/img/avaliacoes/av3.png"],
         ["/assets/img/avaliacoes/av3.png", "/assets/img/avaliacoes/av4.png"],
-        ["/assets/img/avaliacoes/av5.png", "/assets/img/avaliacoes/av6.JPG"]
+        ["/assets/img/avaliacoes/av4.png", "/assets/img/avaliacoes/av5.png"],
+        ["/assets/img/avaliacoes/av5.png", "/assets/img/avaliacoes/av1.png"]
     ];
     const imgs1 = [
         "/assets/img/avaliacoes/av1.png",
         "/assets/img/avaliacoes/av2.png",
         "/assets/img/avaliacoes/av3.png",
         "/assets/img/avaliacoes/av4.png",
-        "/assets/img/avaliacoes/av5.png",
-        "/assets/img/avaliacoes/av6.JPG"];
+        "/assets/img/avaliacoes/av5.png",];
 
 
     const opc3 = [
