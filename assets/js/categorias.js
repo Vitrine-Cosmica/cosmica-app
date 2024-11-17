@@ -4,20 +4,20 @@ function Categorias() {
     categorias.innerHTML = `
         <div class="itens">
             <div class="item">
-                <img src="assets/img/categorias/minibag1.JPEG" />
-                <div class="txt-categoria">Minibags</div>
+                <img  src="assets/img/categorias/minibag1.JPEG" class="categoriaimg" />
+                <div class="txt-categoria">Bag Basica</div>
             </div>
             <div class="item">
-            <img src="assets/img/categorias/mochila.JPG" />
-            <div class="txt-categoria">Mochilas</div>
+            <img src="assets/img/categorias/mochila.JPG" class="categoriaimg"/>
+            <div class="txt-categoria">Mochila Upeshka</div>
             </div>
             <div class="item">
-                <img src="assets/img/categorias/pochete.JPEG" />
-                <div class="txt-categoria">Pochetes</div>
+                <img src="assets/img/categorias/pochete.JPEG" class="categoriaimg"/>
+                <div class="txt-categoria">Pochete Luna</div>
             </div>
             <div class="item">
-                <img src="assets/img/categorias/bolsa.JPG" />
-                <div class="txt-categoria">Bolsas</div>
+                <img src="assets/img/categorias/bolsa.JPG" class="categoriaimg"/>
+                <div class="txt-categoria">Mochila outra</div>
             </div>
         </div>
     `;
