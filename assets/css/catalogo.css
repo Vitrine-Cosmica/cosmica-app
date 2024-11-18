@@ -1,0 +1,57 @@
+#botoes-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.botoescatalogo {
+    margin: auto;
+    height: 200px;
+    width: 300px;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    background-color: #A0B491;
+    font-family: 'Roca Two', sans-serif; 
+    color: #E3E6DD;
+    font-size: 24px;
+}
+
+.catalogo-content h1 { 
+    font-family: 'Roca Two', sans-serif; 
+    color: #61806B; 
+    margin-top: 1%;
+    font-size: 64px;
+}
+
+.catalogo-content h2 {
+    font-family: 'Roca Two', sans-serif; 
+    color: #373937;
+    font-size: 32px;
+    margin-bottom: 5%;
+
+}
+.catalogo-content { 
+
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    align-content: center;
+    font-size: 24px;
+    margin-right: 30%;
+    margin-top: 2%;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: lighter;
+}
+
+.informacoes-produto {
+    margin-top: 5%;
+}

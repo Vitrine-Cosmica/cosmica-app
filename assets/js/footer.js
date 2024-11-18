@@ -23,5 +23,7 @@ function Footer() {
     return footer;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('footer').appendChild(Footer());
+});
 
-document.getElementById('footer').appendChild(Footer());

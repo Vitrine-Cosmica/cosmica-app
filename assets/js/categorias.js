@@ -17,7 +17,7 @@ function Categorias() {
             </div>
             <div class="item">
                 <img src="assets/img/categorias/bolsa.JPG" class="categoriaimg"/>
-                <div class="txt-categoria">Mochila outra</div>
+                <div class="txt-categoria">Mochila Mudita</div>
             </div>
         </div>
     `;

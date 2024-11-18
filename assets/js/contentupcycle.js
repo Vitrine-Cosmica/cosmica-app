@@ -28,5 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
             <button class="btnupcycle">Nos Contate!</button>
             </div>
         `;
+        Footer(); 
     }
 });
