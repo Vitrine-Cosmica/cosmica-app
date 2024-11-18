@@ -257,6 +257,15 @@
     border-radius: 10%;
 }
 
+.img-avaliacao {
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
 
 @media (max-width: 1200px) {
     .img-avaliacao{
