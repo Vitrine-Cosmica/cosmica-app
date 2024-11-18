@@ -6,6 +6,7 @@ function show(shown, hidden1, hidden2) {
     return false;
 }
 
+
 // Navbar
 function Navbar() {
     const navbar = document.createElement('header');
@@ -21,6 +22,7 @@ function Navbar() {
                 <a href="#" onclick="return show('PageUpcycle', 'PageHome', 'PageCosmica');">Upcycle Afetivo</a>
                 <a href="#catalogo">Catálogo</a>
             </div>
+
         </nav>
     `;
     return navbar;
