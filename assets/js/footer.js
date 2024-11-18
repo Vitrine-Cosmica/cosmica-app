@@ -11,7 +11,7 @@ function Footer() {
                 <img src="/assets/img/instagram.png" alt="Instagram"> 
             </a> 
             
-            <a href="https://www.pinterest.com/" target="_blank"> 
+            <a href="https://www.pinterest.com/cosmicacria" target="_blank"> 
                 <img src="/assets/img/pinterest.png" alt="Pinterest"> 
             </a> 
             
