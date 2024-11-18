@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     pageCosmica.innerHTML = `
         <div id="botoes-container">
-            <button class="botoescatalogo" id="btn-basicBag">Basic Bag</button>
-            <button class="botoescatalogo" id="btn-pocheteLuna">Pochete Luna</button>
-            <button class="botoescatalogo" id="btn-mochilaMudita">Mochila Mudita</button>
-            <button class="botoescatalogo"  id="btn-mochilaUpeksha">Mochila Upeksha</button>
+            <button id="btn-basicBag">Basic Bag</button>
+            <button id="btn-pocheteLuna">Pochete Luna</button>
+            <button id="btn-mochilaMudita">Mochila Mudita</button>
+            <button id="btn-mochilaUpeksha">Mochila Upeksha</button>
         </div>
         <div class="catalogo-content"></div>
     `;
@@ -71,6 +71,4 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("btn-mochilaUpeksha").addEventListener("click", () => atualizarProduto(3));
 
     atualizarProduto(0);
-
-    Footer();
 });
