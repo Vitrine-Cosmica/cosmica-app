@@ -83,6 +83,10 @@
     text-align: center;
 }
 
+.item:hover {
+    cursor: pointer;
+}
+
 .item img {
     width: 100%;
     max-width: 360px;

@@ -134,11 +134,12 @@ html, body {
 /* footer */
 
 footer { 
-    background-color: #333; 
-    color: #fff; 
+    background-color: #373937; 
+    color: #E3E6DD; 
     padding: 20px; 
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    margin-top: 200px; 
 } 
 .contact-info { 
     text-align: left;
@@ -147,7 +148,7 @@ footer {
     display: flex; gap: 10px; 
 } 
 .social-icons a { 
-    color: #fff; text-decoration: none; 
+    color: #E3E6DD; text-decoration: none; 
 } 
 .social-icons img { 
     width: 24px; height: 24px; 

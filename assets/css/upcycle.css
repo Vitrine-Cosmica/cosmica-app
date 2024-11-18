@@ -20,17 +20,21 @@
     width: 45%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 2;
+    transform: translateY(70px);
 }
 
 .texto-upcycle-afetivo {
     color: #E3E6DD;
     font-size: 26px;
     font-family: 'Radio Canada', sans-serif;
-    font-weight: medium;
+    font-weight: bold;
     margin-bottom: 5%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .upcycle{
@@ -43,12 +47,10 @@
     padding: 5%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
 }
 
 .btnupcycle {
-    font-family: 'Roca Two', sans-serif; 
-    color: #E3E6DD;
-    font-size: 40px;
     margin-top: 10%;
     margin-left: 25%;
     margin-right: auto;
@@ -59,9 +61,12 @@
     border: none;
     color: #E3E6DD;
     padding: 15px;
-    text-align: center;
+    text-align: end;
     text-decoration: none;
-    display: flexbox;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+
 }
 
 .imgupcycle img {
@@ -71,10 +76,32 @@
 }
 
 .logo-upcycle {
-    margin-left: 35%;
-    margin-right: 50%;
+    text-align: center;
+    margin-top: 5%;
 }
 
 .logo-upcycle img{
     max-width: 400px;
+}
+
+.wpp { 
+    width: 60px;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 25px;
+
+}
+
+.btnupcycle p {
+    font-family: 'Roca two';
+    white-space: nowrap;
+    font-family: 'Roca Two', sans-serif; 
+    color: #E3E6DD;
+    font-size: 40px;
+    margin-left: 66px;
+    margin-top: 25px;
+}
+
+.btnupcycle:hover { 
+    background-color: white; 
 }
