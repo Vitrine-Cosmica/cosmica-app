@@ -118,3 +118,25 @@ html, body {
         gap: 8px;
     }
 }
+
+/* footer */
+
+footer { 
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+} 
+.contact-info { 
+    text-align: left;
+} 
+.social-icons { 
+    display: flex; gap: 10px; 
+} 
+.social-icons a { 
+    color: #fff; text-decoration: none; 
+} 
+.social-icons img { 
+    width: 24px; height: 24px; 
+}
