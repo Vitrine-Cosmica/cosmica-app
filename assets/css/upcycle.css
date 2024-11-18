@@ -20,17 +20,21 @@
     width: 45%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 2;
+    transform: translateY(70px);
 }
 
 .texto-upcycle-afetivo {
     color: #E3E6DD;
     font-size: 26px;
     font-family: 'Radio Canada', sans-serif;
-    font-weight: medium;
+    font-weight: bold;
     margin-bottom: 5%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .upcycle{
@@ -43,6 +47,7 @@
     padding: 5%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
 }
 
 .btnupcycle {
@@ -62,6 +67,7 @@
     text-align: center;
     text-decoration: none;
     display: flexbox;
+
 }
 
 .imgupcycle img {
@@ -71,8 +77,8 @@
 }
 
 .logo-upcycle {
-    margin-left: 35%;
-    margin-right: 50%;
+    text-align: center;
+    margin-top: 5%;
 }
 
 .logo-upcycle img{
