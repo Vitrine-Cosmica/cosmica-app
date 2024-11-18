@@ -106,7 +106,7 @@ if (pageCosmica) {
             </div>
         </section>
     `;
-    Footer() 
+    Footer(); 
 }
 
 });

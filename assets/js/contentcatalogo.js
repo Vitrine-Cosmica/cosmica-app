@@ -71,4 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("btn-mochilaUpeksha").addEventListener("click", () => atualizarProduto(3));
 
     atualizarProduto(0);
+
+    Footer();
 });

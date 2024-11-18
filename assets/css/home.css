@@ -145,6 +145,10 @@
     background-clip: border-box;
 }
 
+.item:hover{
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .itens{
         gap: 0px;
