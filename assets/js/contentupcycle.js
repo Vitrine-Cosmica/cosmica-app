@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <img src="assets/img/upcycle/upcycle.png" alt="">
             </div>
             
-            <button class="btnupcycle">Nos Contate!</button>
+            <button class="btnupcycle">
+            <p>Nos Contate!</p>
+            <img src="assets/img/whatsapp.png" class="wpp">
+            </button>
             </div>
         `;
     }

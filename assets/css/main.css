@@ -84,14 +84,15 @@ html, body {
     transition: 0.5s;
 }
 
-
-.secoes a:hover::after{
+.secoes a:hover::after,
+.secoes a.active::after {
     width: 70%;
 }
 
 .secoes {
     margin-left: 0%;
 }
+
 
 @media (max-width: 768px) {
     .navbar {

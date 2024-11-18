@@ -51,9 +51,6 @@
 }
 
 .btnupcycle {
-    font-family: 'Roca Two', sans-serif; 
-    color: #E3E6DD;
-    font-size: 40px;
     margin-top: 10%;
     margin-left: 25%;
     margin-right: auto;
@@ -64,9 +61,11 @@
     border: none;
     color: #E3E6DD;
     padding: 15px;
-    text-align: center;
+    text-align: end;
     text-decoration: none;
-    display: flexbox;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
 
 }
 
@@ -83,4 +82,26 @@
 
 .logo-upcycle img{
     max-width: 400px;
+}
+
+.wpp { 
+    width: 60px;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 25px;
+
+}
+
+.btnupcycle p {
+    font-family: 'Roca two';
+    white-space: nowrap;
+    font-family: 'Roca Two', sans-serif; 
+    color: #E3E6DD;
+    font-size: 40px;
+    margin-left: 66px;
+    margin-top: 25px;
+}
+
+.btnupcycle:hover { 
+    background-color: white; 
 }
