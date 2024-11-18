@@ -3,15 +3,21 @@ function Footer() {
     footer.innerHTML = `
         <div class="contact-info"> 
             <p>Telefone: (11) 1234-5678</p> 
-            <p>Email: contato@seusite.com</p> 
+            <p>Email: Alexia@Cosmica.com</p> 
         </div> 
         <div class="social-icons"> 
+        
+            <a href="https://www.instagram.com/cosmicacria" target="_blank"> 
+                <img src="/assets/img/instagram.png" alt="Instagram"> 
+            </a> 
+            
+            <a href="https://www.pinterest.com/" target="_blank"> 
+                <img src="/assets/img/pinterest.png" alt="Pinterest"> 
+            </a> 
+            
             <a href="https://wa.me/1234567890" target="_blank"> 
-            <img src="caminho/para/whatsapp.png" alt="WhatsApp"> </a> 
-            <a href="https://www.instagram.com/seuperfil" target="_blank"> 
-            <img src="caminho/para/instagram.png" alt="Instagram"> </a> 
-            <a href="https://www.pinterest.com/seuperfil" target="_blank"> 
-            <img src="caminho/para/pinterest.png" alt="Pinterest"> </a> 
+                <img src="/assets/img/whatsapp.png" alt="WhatsApp"> 
+            </a>
         </div>
     `;
     return footer;
