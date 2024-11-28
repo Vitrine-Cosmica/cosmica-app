@@ -38,9 +38,12 @@ html, body {
 
 .navbar {
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     padding: 15px;
     background-color: #E3E6DD;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
 }
 
@@ -104,7 +107,7 @@ html, body {
     }
 
     .navbar a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .navbar nav {
@@ -115,6 +118,7 @@ html, body {
 @media (max-width: 480px) {
     .navbar {
         padding: 8px 10px;
+        width: 100%;
     }
 
     .logo img {
@@ -123,7 +127,8 @@ html, body {
     }
 
     .navbar a {
-        font-size: 12px;
+        font-size: 9px;
+        width: 100%;
     }
 
     .navbar nav {
@@ -139,6 +144,7 @@ footer {
     padding: 20px; 
     display: flex; 
     justify-content: space-between; 
+    margin-top: 2%;
 } 
 .contact-info { 
     text-align: left;
@@ -151,4 +157,19 @@ footer {
 } 
 .social-icons img { 
     width: 24px; height: 24px; 
+}
+
+@media (max-width: 480px) {
+
+    .contact-info { 
+        font-size: 10px;
+    } 
+
+    .social-icons a { 
+        color: #E3E6DD; text-decoration: none; 
+    } 
+    
+    .social-icons img { 
+        width: 18px; height: 18px; 
+    }
 }

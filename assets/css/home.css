@@ -6,7 +6,7 @@
 
 .slogan h1{
     font-family: 'Roca Two';
-    font-size: 4vh;
+    font-size: 3vw;
     color: #373937;
 }
 
@@ -23,12 +23,16 @@
     }
 
     .slogan h1{
-        font-size: 3.8vh;
+        font-size: 3.4vw;
     }
 
 }
 
 @media (max-width: 768px) {
+    .slogan h1{
+        font-size: 4vw;
+    }
+
     .slogan {
         margin-top: 5%;
     }
@@ -38,19 +42,12 @@
         max-width: 60%;
     }
     
-    .slogan h1{
-        font-size: 3.4vh;
-    }
 }
 
 @media (max-width: 480px) {
     .slogan .logo-completo {
         padding-bottom: 4%;
         max-width: 40%;
-    }
-
-    .slogan h1{
-        font-size: 3vh;
     }
 
 }
@@ -188,13 +185,13 @@
 
 @media (max-width: 480px) {
     .item {
-        width: 150px;
-        height: 100px;
+        width: 70px;
+        height: 80px;
     }
 
     .item img {
-        max-width: 150px;
-        height: 100px;
+        min-width: 80px;
+        min-height: 80px;
     }
 
     .txt-categoria {
@@ -206,7 +203,7 @@
 /* avaliações */
 .avaliacoes h1 {
     color: #373937;
-    font-size: 6.5vh;
+    font-size: 4vw;
     font-family: 'Roca Two';
     padding-left: 7%;
 }
@@ -291,13 +288,15 @@
 
 
 @media (max-width: 1200px) {
+
+    .avaliacoes h1 {
+        font-size: 4.5vw;
+    }
+
     .img-avaliacao{
         max-width: 40%;
     }
 
-    .avaliacoes h1 {
-        font-size: 6vh;
-    }
 
     .crsImg1{
         display: none;
@@ -344,15 +343,16 @@
 }
 
 @media (max-width: 768px) {
- 
+    .avaliacoes h1 {
+        font-size: 5vw;
+    }
+
     .img-avaliacao{
         
         max-height: 300px;
   
     }
-    .avaliacoes h1 {
-        font-size: 5vh;
-    }
+
     .crsImg1{
         display: flex;
     }
@@ -401,8 +401,44 @@
 }
 
 @media (max-width: 480px) {
+    #avaliacoes {
+        align-content: center;
+    }
+   
+    .avaliacoes {
+        padding: 3% ;
+        padding-top: 5%;
+        max-height: 350px;
+        display: flexbox;
+        align-content: center;
+    }
 
+     .crsImg1{
+        display: flex;
+        max-height: 200px;
+        max-width: 300px;
+        margin-left: 13%;
+    }
+
+    #imgopc1{
+        height: 160px;
+    }
+    .img-wrapper {
+        position: relative;
+        display: flex;
+    } 
+
+    .subtitle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        padding: 5px 10px;
+        font-size: 8px;
+    }
 }
+
 
 /*sobre*/
 .sobre {
@@ -421,7 +457,7 @@
 
 .sobre .texto-sobre {
     padding-top: 2%;
-    font-size: 3.4vh;
+    font-size: 2vw;
     color: #373937;
     margin-bottom: 60%;
 }
@@ -439,47 +475,41 @@
 
 .sobre h1 {
     color: #61806B;
-    font-size: 10vh;
+    font-size: 4vw;
     font-family: 'Roca Two';
 }
 
 .sobre h3 {
     font-family: 'Roca Two';
     font-weight: 500;
-    font-size: 5vh;
+    font-size: 2.5vw;
     color: #373937;
 }
 
 @media (max-width: 1200px) {
     
     .sobre h1 {
-        font-size: 8vh;
+        font-size: 8vw;
     }
 
     .sobre h3 {
         font-weight: 500;
-        font-size: 3.6vh;
+        font-size: 3.6vw;
     }
 
     .sobre .texto-sobre {
-        font-size: 2.6vh;
+        font-size: 2.6vw;
     }
 
 }
 
 @media (max-width: 768px) {
 
-    .sobre h1 {
-        font-size: 6vh;
-    }
-
     .sobre h3 {
         font-weight: 500;
-        font-size: 2.5vh;
     }
 
     .sobre .texto-sobre {
-        font-size: 2vh;
         width: 110%;
     }    
 
@@ -491,24 +521,94 @@
         margin-top: -6%;
         display: flex;
         width: 50%;
+        max-height: 70%;
         padding-right: 7%;
         padding-left: 4%;
         object-fit: contain;
     }
 }
 
+
+/*Botão da Home*/
+#BotaoHome {
+    width: 100%;
+    align-content: center;
+    height: 600px;
+    display: block;
+    background-image: url('/assets/img/BackgroundAreaBtn.png');
+    background-size: cover;
+    margin-top: -15%;
+}
+
+
+#btn-home {
+    margin: auto;
+    padding: 60px 110px;
+    display: flex;
+    text-align: center;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #61806B;
+    background-color: #E3E6DD;
+    border: none;
+    outline: 6px solid #61806B;
+    border-radius: 35px;
+    width: 600px;
+    height: 180px;
+    cursor: pointer;
+}
+
+button#btn-home:hover {
+    background-image: url('/assets/img/BackgroundBtn.png');
+    background-size: contain;
+    background-repeat: repeat;
+    transition: color 0.3s;
+    color: #E3E6DD;
+} 
+
+
+@media (max-width: 1200px) {
+    #BotaoHome {
+        height: 550px;
+    }
+
+    #btn-home{
+        height: 150px;
+        width: 500px;
+        border-radius: 30px;
+        padding: 40px 100px;
+        font-size: 30px;
+    }
+}   
+
+@media (max-width: 780px) {
+
+    #BotaoHome {
+        height: 400px;
+    }
+
+    #btn-home{
+        height: 100px;
+        max-width: 65%;
+        border-radius: 30px;
+        padding: 20px 80px;
+        font-size: 24px;
+        outline: 5px solid #61806B;
+    }
+}   
+
 @media (max-width: 480px) {
-
-    .sobre h1 {
-        font-size: 8vh;
+    #BotaoHome {
+        height: 250px;
     }
 
-    .sobre h3 {
-        font-weight: 500;
-        font-size: 4vh;
-    }
-
-    .sobre .texto-sobre {
-        font-size: 3vh;
+    #btn-home{
+        height: 70px;
+        max-width: 50%;
+        border-radius: 20px;
+        padding: 15px 20px;
+        font-size: 16px;
+        outline: 3.5px solid #61806B;
     }
 }
