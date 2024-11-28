@@ -6,24 +6,54 @@
     max-width: 1500px;
     flex-wrap: nowrap;
     margin: auto;
+    height: 100%;
+}
+
+.botoescatalogo p{
+    color: #E3E6DD;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #373937be;
+    font-family: 'Roca Two', sans-serif; 
+    font-size: 24px;
+
 }
 
 .botoescatalogo {
     margin: auto;
-    height: 2000px;
+    height: 600px;
     width: 300px;
     display: flexbox;
     flex-direction: row;
     align-items: center;
     margin: 5px;
-    text-align: center;
     border-radius: 30px;
     border: none;
     background-color: #A0B491;
-    font-family: 'Roca Two', sans-serif; 
-    color: #E3E6DD;
-    font-size: 24px;
 }
+
+#btn-basicBag {
+    background-image: url('/assets/img/mosaicos/basicBagMos.png');
+    background-size: cover;
+}
+
+#btn-pocheteLuna {
+    background-image: url('/assets/img/mosaicos/pocheteLunaMos.png');
+    background-size: cover;
+}
+
+#btn-mochilaMudita {
+    background-image: url('/assets/img/mosaicos/mochilaMuditaMos.png');
+    background-size: cover;
+}
+
+#btn-mochilaUpeksha {
+    background-image: url('/assets/img/mosaicos/mochilaUpeshkaMos.png');
+    background-size: cover;
+}
+
 
 .catalogo-content h1 { 
     font-family: 'Roca Two', sans-serif; 
@@ -47,11 +77,33 @@
     align-content: center;
     font-size: 24px;
     margin-right: 30%;
-    margin-top: 2%;
+    margin-top: 2%; 
     font-family: 'Radio Canada', sans-serif;
     font-weight: lighter;
 }
 
 .informacoes-produto {
     margin-top: 5%;
+}
+
+@media (max-width: 1200px) {
+
+    .botoescatalogo {
+        height: 550px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .botoescatalogo {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .botoescatalogo {
+        height: 300px;
+    }
+
 }

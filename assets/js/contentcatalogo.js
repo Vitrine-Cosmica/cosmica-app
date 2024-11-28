@@ -39,13 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     pageCosmica.innerHTML = `
         <div id="botoes-container">
-            <button id="btn-basicBag">Basic Bag</button>
-            <button id="btn-pocheteLuna">Pochete Luna</button>
-            <button id="btn-mochilaMudita">Mochila Mudita</button>
-            <button id="btn-mochilaUpeksha">Mochila Upeksha</button>
+            <button class="botoescatalogo" id="btn-basicBag"><p>Basic Bag</p></button>
+            <button class="botoescatalogo" id="btn-pocheteLuna"><p>Pochete Luna</p></button>
+            <button class="botoescatalogo" id="btn-mochilaMudita"><p>Mochila Mudita</p></button>
+            <button class="botoescatalogo" id="btn-mochilaUpeksha"><p>Mochila Upeksha</p></button>
         </div>
         <div class="catalogo-content"></div>
     `;
+
 
     function atualizarProduto(index) {
         const produto = produtos[index];

@@ -71,10 +71,47 @@
 }
 
 .logo-upcycle {
-    margin-left: 35%;
-    margin-right: 50%;
+    margin: auto;
+    display: flex;
+    width: 400px;
 }
 
-.logo-upcycle img{
-    max-width: 400px;
+#logoupcycleimg{
+    display: flex;
+    align-self: center;
+    width: 400px;
+}
+
+@media (max-width: 1200px) {
+
+    .logo-upcycle {
+        width: 350px;
+    }
+    
+    #logoupcycleimg{
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo-upcycle {
+        width: 300px;
+    }
+    
+    #logoupcycleimg{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo-upcycle {
+        width: 250px;
+    }
+    
+    #logoupcycleimg{
+        width: 250px;
+    }
 }

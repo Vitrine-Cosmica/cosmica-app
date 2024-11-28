@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (pageUpcycle) {
         pageUpcycle.innerHTML = `
             <div class="logo-upcycle">
-                <img src="assets/img/LogoCompleto.png" alt="">
+                <img id="logoupcycleimg" src="assets/img/LogoCompleto.png" alt="">
             </div>
             <div class="titulo-upcycle">
                 <h1>Roupas Contam Histórias</h1>
