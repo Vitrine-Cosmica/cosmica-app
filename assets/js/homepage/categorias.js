@@ -8,7 +8,7 @@ function Categorias() {
                 <div class="txt-categoria">Bag <br /> Basica</div>
             </div>
             <div class="item">
-            <img src="assets/img/categorias/mochila.JPG" class="categoriaimg"/>
+            <img src="assets/img/categorias/mochila.jpg" class="categoriaimg"/>
             <div class="txt-categoria">Mochila <br /> Upeshka</div>
             </div>
             <div class="item">
