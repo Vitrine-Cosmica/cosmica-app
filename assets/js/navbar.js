@@ -1,19 +1,23 @@
-
-function show(shown, hidden1, hidden2, hidden3) {
-    document.getElementById(shown).style.display = 'block';
-    document.getElementById(hidden1).style.display = 'none';
-    document.getElementById(hidden2).style.display = 'none';
-    document.getElementById(hidden3).style.display = 'none';
-    
-    const navLinks = document.querySelectorAll('.secoes a');
-    navLinks.forEach(link => link.classList.remove('active'));
-    const activeLink = document.querySelector(`a[onclick="return show('${shown}', '${hidden1}', '${hidden2}', '${hidden3}');"]`);
-    if (activeLink) {
-        activeLink.classList.add('active');
-    }
-
-    return false;
+function navigateTo(page) {
+    location.hash = page;
 }
+
+function handleHashChange() {
+    const page = location.hash.substr(1);
+    const pages = ['PageHome', 'PageCatalogo', 'PageCosmica', 'PageUpcycle'];
+
+    pages.forEach(p => {
+        document.getElementById(p).style.display = p === page ? 'block' : 'none';
+    });
+}
+
+window.addEventListener('hashchange', handleHashChange);
+window.addEventListener('load', () => {
+    if (!location.hash) {
+        location.hash = 'PageHome';
+    }
+    handleHashChange();
+});
 
 function Navbar() {
     const navbar = document.createElement('header');
@@ -25,10 +29,10 @@ function Navbar() {
                     <img src="assets/img/LogoCosmicaNav.svg" width="80" height="auto" />
                 </div>
                 <div class="secoes">
-                    <a href="#" onclick="return show('PageHome', 'PageCatalogo', 'PageCosmica', 'PageUpcycle');">Home</a> 
-                    <a href="#" onclick="return show('PageCosmica', 'PageCatalogo', 'PageHome', 'PageUpcycle');">Cósmica</a> 
-                    <a href="#" onclick="return show('PageUpcycle', 'PageCatalogo', 'PageHome', 'PageCosmica');">Upcycle Afetivo</a>
-                    <a href="#" onclick="return show('PageCatalogo', 'PageUpcycle', 'PageHome', 'PageCosmica');">Catálogo</a>
+                    <a href="#PageHome">Home</a>
+                    <a href="#PageCosmica">Galeria Cósmica</a>
+                    <a href="#PageUpcycle">Upcycle Afetivo</a>
+                    <a href="#PageCatalogo">Catálogo</a>
                 </div>
             </div>
         </nav>
