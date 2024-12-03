@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="image-content">
                 <img src="${produto.img}" alt="${produto.nome}" />
                 <p class="precop">
-                    Valor sustentável: ${produto.valores[0]} <br />
-                    Valor generoso: ${produto.valores[1]} <br />
+                    Valor Sustentável: ${produto.valores[0]} <br />
+                    Valor Generoso: ${produto.valores[1]} <br />
                     Valor Abundante: ${produto.valores[2]}
                 </p>
                 <button class="comprar-btn">Comprar
